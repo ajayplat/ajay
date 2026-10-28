@@ -1,0 +1,220 @@
+<!-- doctype html-->
+<!-- we W3C of (DTD)-->
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<!-- (RWD):-resiponsive web design
+mobile first
+width%
+max-width:100% , min-width:100%;
+target ( break point) mobile,tablet,desktop,TV..
+Media Query:for divices
+
+-->
+
+<!--  Hero Section -->
+
+
+<title>Home_page</title>
+<header>
+
+<div id="profile">
+<img src="imgas/p1.jpg">
+</div>
+<div id="NAME">
+Hi I am Vijay Sharma
+</div>
+<div id="UIUXdesign">
+    UI/UX designer
+</div>
+</header>
+</head>
+
+<style>
+/* css3 */
+/*selector*/
+
+header
+{
+width:95%;
+
+margin:auto;
+display:flex;
+margin-top:-5px;
+margin-bottom:20px;
+text-align:center;
+
+}
+
+#profile
+{
+width:150px;
+height:150px;
+
+margin:20px;
+}
+
+#profile img
+{
+border-radius:100px;
+box-shadow:3px 3px 3px gray;
+}
+#name
+{
+width:880px;
+
+font-size:15px;
+margin-left:20px;
+padding-top:70px;
+font-family:Arial;
+
+
+}
+
+#UIUXdesign
+{
+width:880px;
+
+font-size:50px;
+margin-left:-810px;
+padding-top:85px;
+font-family: Montserrat;
+color:blue; 
+
+
+
+}
+
+/* class style  */
+.textstyle
+{
+text-align:justify;
+font-size:12px;
+font-family:verdana;
+color:rgb(73, 72, 72);
+width:60%;
+padding:100px;
+margin:auto;
+margin-bottom:20px;
+margin-left:-43px;
+
+margin-top:-60px;
+text-indent:40px;
+text:transfrom;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) 
+{
+body{background:gree;}
+#banner{display:none;}
+#profile
+{
+width:150px;
+height:150px;
+text-align:center;
+}
+#profile img
+{
+width:140px;
+height:140px;
+}
+
+
+ }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)
+ {
+
+body{background:yello;}
+#banner{width:60%;height:100px;}
+#profile img
+{
+width:60%;
+height:60%;
+}
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) 
+{
+
+body{background:cyn;}
+#profile img
+{
+width:100%;
+height:100%;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px)
+ {
+body{background:re;}
+#banner{width:80%;height:400px;}
+#profile img
+{
+width:100%;
+height:100%;
+}
+ }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+@media only screen and (min-width: 1200px) 
+{
+
+
+#banner{height:300px;}
+#profile img
+{
+width:150px;
+height:150px;
+}
+
+}
+body
+{
+    background:bisque;
+}
+
+</style>
+<nav></nav>
+
+<body>
+<main>
+<section>
+<h2>About me</h2>
+
+<!-- empty tag -->
+<hr color="#4A000A" size="10"/>
+
+<p class="textstyle">
+<span style="font-size:12px;color:black;;padding:-2px;"><b>
+ Name: Vijay Sharma 
+</b>
+</span>
+</br>
+Location: Delhi, India
+<mark><b><i>
+Education & Focus:</mark></b></i>
+ Student pursuing computer, digital design, and UI/UX design coursework at Arena Animation (GTB Nagar).
+Experience with information architecture, responsive layouts, wireframing, Gestalt principles, branding, and graphic design tools (Photoshop, Illustrator, CorelDRAW).
+</p>   
+</section>
+
+</main>
+
+<footer></footer>
+
+</body>
+</html>
