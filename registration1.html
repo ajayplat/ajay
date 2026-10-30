@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_in_Form</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<header>
+    Form in html
+</header>
+<body>
+    <main>
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="photogellre.html">Photo Gellre</a></li>
+            <li><a href="Table.html.html">Table Mark</a></li>
+            <li><a href="list.html.">List</a></li>
+            <li><a href="secnede.html">about me</a></li>
+            
+        </ul>
+    </nav>
+
+
+        <table border="1px" cellpadding="10">
+            <form method="post" action="">
+                <caption>Registration Form</caption>
+                <tr>
+                    <td>
+                        <lable >First Name</lable>
+                    </td>
+                    <td><input type="text" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable >Last Name</lable>
+                    </td>
+                    <td><input type="text" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Age</lable>
+                    </td>
+                    <td><input type="number" max="30" min="18"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>DOB</lable>
+                    </td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Time</lable>
+                    </td>
+                    <td><input type="time" ></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>About Me</lable>
+                    </td>
+                    <td><textarea name="about_me" cols="57" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Gender</lable>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" checked value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Hobby</lable>
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" value="reading">Reading
+                        <input type="checkbox" value="travelling">Travelling
+                        <input type="checkbox" value="sports">Sports
+                        <input type="checkbox" value="music">Music
+                    </td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <lable >City</lable>
+                    </td>
+                    <td>
+                        <select name="city">
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="surat">Surat</option>
+                            <option value="rajkot">Rajkot</option>
+                            <option value="vadodara">Vadodara</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable >Upload file</lable>
+                    </td>
+                    <td><input type="file"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><input type="submit" value="Register">
+                        <input type="Reset">
+                    </td>
+                </tr>
+               
+            </form>
+        </table>
+    
+    </main>
+    
+</body>
+</html>
