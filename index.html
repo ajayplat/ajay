@@ -17,17 +17,17 @@ Media Query:for divices
 
 <title>Home page</title>
 
+    
+
+
 <header>
+    
     
 <div id="profile">
 <img src="imgas/p1.jpg">
 </div>
-<div id="NAME">
-Hi I am Vijay Sharma
-</div>
-<div id="UIUXdesign">
-    UI/UX designer
-</div>
+
+
 </header>
 </head>
 
@@ -38,13 +38,28 @@ Hi I am Vijay Sharma
 header
 {
 width:95%;
-
+justify-content:space-around;
+flex-wrap:wrap;
 margin:auto;
-display:flex;
+/display:flex;
 margin-top:-5px;
 margin-bottom:20px;
 text-align:center;
 
+}
+#box
+{
+    width:1345px;
+    height:700px;
+    background:#01082a;
+    border-radius:10px;
+    box-shadow:5px 5px 5px gray;
+}
+#box img
+{
+    width:100%;
+    height:100%;
+    border-radius:10px;
 }
 
 #profile
@@ -52,7 +67,7 @@ text-align:center;
 width:150px;
 height:150px;
 
-margin:20px;
+margin:0px;
 }
 
 #profile img
@@ -60,32 +75,16 @@ margin:20px;
 border-radius:100px;
 box-shadow:3px 3px 3px gray;
 }
-#name
+
+
+#body
 {
-width:880px;
-
-font-size:15px;
-margin-left:20px;
-padding-top:70px;
-font-family:Arial;
-
-
-
+    margin: 0px;
 }
 
-#UIUXdesign
-{
-width:880px;
-
-font-size:50px;
-margin-left:-810px;
-padding-top:85px;
-font-family: Montserrat;
-color:blue; 
 
 
 
-}
 
 /* class style  */
 .textstyle
@@ -95,14 +94,16 @@ font-size:12px;
 font-family:verdana;
 color:rgb(73, 72, 72);
 width:60%;
-padding:100px;
+padding:50px;
 margin:auto;
 margin-bottom:20px;
 margin-left:-43px;
-
+background:white;
 margin-top:-60px;
 text-indent:40px;
-
+margin:10px;
+border-radius:10px;
+box-shadow:5px 5px 5px gray;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -115,7 +116,7 @@ body{background:gree;}
 {
 width:150px;
 height:150px;
-text-align:center;
+
 }
 #profile img
 {
@@ -123,18 +124,7 @@ width:140px;
 height:140px;
 }
 
-#UIUXdesign
-{
-width:880px;
 
-font-size:30px;
-
-padding-top:85px;
-font-family: Montserrat;
-color:blue; 
-
-
- }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -143,11 +133,11 @@ color:blue;
  {
 
 body{background:yello;}
-#banner{width:60%;height:100px;}
+
 #profile img
 {
-width:60%;
-height:60%;
+width:100%;
+height:100%;
 }
 }
 
@@ -171,8 +161,8 @@ height:100%;
 
 @media only screen and (min-width: 992px)
  {
-body{background:re;}
-#banner{width:80%;height:400px;}
+
+
 #profile img
 {
 width:100%;
@@ -186,15 +176,7 @@ height:100%;
 @media only screen and (min-width: 1200px) 
 {
 
-#UIUXdesign
-{
-width:880px;
 
-font-size:50px;
-
-font-family: Montserrat;
-color:blue; 
-font-display:flex;
 }
 #profile img
 {
@@ -202,16 +184,19 @@ width:150px;
 height:150px;
 }
 
-}
+
 body
 {
-    /background:rgb(255, 196, 123);
+    background:rgb(255, 196, 123);
+    margin:0px;
+    border-radius:0px;
 }
 nav
 {
     background:rgb(88, 88, 88);
-    width:100px;
-    padding:1px;
+    width:70px;
+    padding:0px;
+    right:500px;
 
 }
 nav ul li:hover
@@ -237,6 +222,12 @@ nav ul li:hover a:visited
     color:white;
     text-decoration:underline;
 }
+h2{
+    color:rgb(0, 14, 26);
+    font-size:30px;
+    margin-left:10px;
+    font-family:arial;
+}
 </style>
 <nav></nav>
 
@@ -245,7 +236,7 @@ nav ul li:hover a:visited
 
     <nav>
         <ul>
-            <li><a href="practice.html">Practice </a></li>
+            <a href="practice.html">Practice </a>
           
         </ul>
     
@@ -259,14 +250,14 @@ nav ul li:hover a:visited
 <hr color="#4A000A" size="10"/>
 
 <p class="textstyle">
-<span style="font-size:12px;color:black;;padding:-2px;"><b>
- Name: Vijay Sharma 
+<span style="font-size:15px;color:black;;padding:-2px;"><b>
+ Vijay Sharma 
 </b>
 </span>
 </br>
 Location: Delhi, India
-<mark><b><i>
-Education & Focus:</mark></b></i>
+
+Education & Focus:
  Student pursuing computer, digital design, and UI/UX design coursework at Arena Animation (GTB Nagar).
 Experience with information architecture, responsive layouts, wireframing, Gestalt principles, branding, and graphic design tools (Photoshop, Illustrator, CorelDRAW).
 </p>   
