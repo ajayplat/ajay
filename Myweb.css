@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background:#1e293b;
+    min-height: 100vh;
+    /* yahan se justify-content aur align-items hata diya hain taaki elements top se start hon*/
+    
+}
+
+.navbar {
+    width: 100%;
+    /position:fixed; /*Isse navber top par fix ho jayegi[span_0](start_span)[span_0](end_span)*/
+    top:0;           /*Bilkul upar chipkaane ke liye [span_1] (start_span)[span_1](end_span)*/
+    left:0;
+    z-index: 1000;
+    box-shadow:10px 10px 10px gray;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.08);
+    padding-top:10px;  /* UPAR SE THODE SPACE DENE KE LIYA (OPTIONL)*/
+
+}
+
+.nav-container {
+    max-width: 700px;
+    margin-left:600px;
+    padding: 2rem;
+    background-color: #0f172a;
+    border-radius: 40px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: #fff;
+}
+
+.arrow {
+    border: solid #94a3b8;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow {
+    transform: translateY(2px) rotate(225deg);
+    border-color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 0.75rem;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0.90s;
+    box-shadow: 0 10px 25px rgba(248, 176, 176, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 10px);
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(117, 210, 250, 0.1);
+    color: #4bc0f1;
+    padding-left: 1.25rem;
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff !important;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s !important;
+    margin:10px;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) !important;
+    
+}
+
+/* class style  */
+.textstyle
+{
+text-align:justify;
+font-size:12px;
+font-family:verdana;
+color: #fff !important;
+width:50%;
+padding:50px;
+margin:auto;
+margin-bottom:20px;
+margin-left:-43px;
+background:#0f172a;
+
+margin-top:20%;
+text-indent:40px;
+margin:10px;
+border-radius:10px;
+box-shadow:5px 5px 5px gray;
+}
+h2
+{
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff !important;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s !important;
+    margin:5px;
+    margin-bottom:10px;
+   
+    width:13%;
+}  
+h2:hover{
+     transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) !important;
+
+}
+
+    
+#header
+    {
+        width:200px;
+        height:200px;
+        margin:10px;
+    }
+#profile img
+    {
+        width:200px;
+        height:200px;
+        border-radius:100%;
+        box-shadow:3px 0px 10px #fff;
+        margin-top:10px;
+    }
