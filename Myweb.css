@@ -17,11 +17,11 @@ body
 
 .navbar {
     width: 100%;
-    /position:fixed; /*Isse navber top par fix ho jayegi[span_0](start_span)[span_0](end_span)*/
-    top:0;           /*Bilkul upar chipkaane ke liye [span_1] (start_span)[span_1](end_span)*/
+    position:fixed; 
+    top:0;          
     left:0;
     z-index: 1000;
-    box-shadow:10px 10px 10px gray;
+    /box-shadow:10px 10px 10px gray;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 0px solid rgba(255, 255, 255, 0.08);
@@ -30,8 +30,8 @@ body
 }
 
 .nav-container {
-    max-width: 700px;
-    margin-left:600px;
+    max-width: 525px;
+    margin-left:590px;
     padding: 2rem;
     background-color: #0f172a;
     border-radius: 40px;
@@ -44,7 +44,7 @@ body
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 24px;
     list-style: none;
 }
 
@@ -55,12 +55,12 @@ body
 .nav-links a {
     color: #94a3b8;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 20px;
     font-weight: 500;
     transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap:10px ;
 }
 
 .nav-links a:hover,
@@ -163,15 +163,16 @@ box-shadow:5px 5px 5px gray;
 h2
 {
   background: linear-gradient(135deg, #38bdf8, #0284c7);
-    color: #fff !important;
-    padding: 0.7rem 1.5rem;
+    color: #fff;
+    padding: 11.2px 24px;
     border-radius: 50px;
     box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
-    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s !important;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
     margin:5px;
     margin-bottom:10px;
-   
-    width:13%;
+   font-size:20px;
+    width:16%;
+    height:10%
 }  
 h2:hover{
      transform: translateY(-2px);
@@ -192,6 +193,617 @@ h2:hover{
         width:200px;
         height:200px;
         border-radius:100%;
-        box-shadow:3px 0px 10px #fff;
-        margin-top:10px;
+        /box-shadow:3px 0px 10px #fff;
+        margin-top:110px;
     }
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+
+
+.navbar {
+    width: 100%;
+    position:fixed; 
+    top:0;
+    height:50px;          
+    left:0;
+    z-index:900px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 0px solid rgb(255, 0, 0);
+    padding-top:10px;  /* UPAR SE THODE SPACE DENE KE LIYA (OPTIONL)*/
+
+}
+
+.nav-container 
+    {
+    max-width: 430px;
+    margin-left:140px;
+    padding: 20px;
+    background-color: #0f172a;
+    border-radius: 20px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    position:flex; 
+    font-size: 10px;
+    font-weight: 300;
+    /transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 07px;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: #ffffff;
+}
+
+.arrow {
+    border: solid #94a3b8;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow {
+    transform: translateY(2px) rotate(225deg);
+    border-color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left:00%;
+    transform: translateX(-50%);
+    width: 110px;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border:0px solid #fff;
+    border-radius: 28px;
+    padding:0px;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0.90s;
+    box-shadow: 0 05px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 15px);
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 10px;
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(117, 210, 250, 0.1);
+    color: #4bc0f1;
+    padding-left:10px;
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff ;
+    padding: 5px;
+    border-radius:30px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    margin:8px;
+    font-size:10px;
+   
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) ;
+    
+}
+
+/* class style  */
+.textstyle
+{
+text-align:justify;
+font-size:10px;
+font-family:verdana;
+color: #fff ;
+width:70%;
+padding:20px;
+margin:auto;
+margin-bottom:20px;
+margin-left:-43px;
+background:#0f172a;
+margin-left: 20px;
+margin-top:20%;
+text-indent:40px;
+margin:10px;
+border-radius:10px;
+box-shadow:0px 0px 5px rgb(82, 82, 82);
+transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+}
+.textstyle:hover
+{
+ transform: translateY(-2px);
+ box-shadow:0px 0px 4px ghostwhite;
+}
+h2
+{
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+    margin:5px;
+    margin-bottom:10px;
+   font-size:15px;
+    width: 100px;
+    height:30px;
+    margin-left: 20px;
+    display: flex;
+}  
+h2:hover{
+     transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) !important;
+
+}
+
+    
+#header
+    {
+        width:200px;
+        height:200px;
+        margin:10px;
+    }
+#profile img
+    {
+        width:110px;
+        height:110px;
+        border-radius:100%;
+        box-shadow:3px 0px 4px #fff;
+        margin-top:60px;
+        margin-left: 20px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    .navbar {
+    width: 100%;
+    position:fixed; 
+    top:0;
+    height:50px;          
+    left:0;
+    z-index:900px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 0px solid rgb(255, 0, 0);
+    padding-top:10px;  /* UPAR SE THODE SPACE DENE KE LIYA (OPTIONL)*/
+
+}
+
+.nav-container 
+    {
+    max-width: 430px;
+    margin-left:140px;
+    padding: 20px;
+    background-color: #0f172a;
+    border-radius: 20px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    position:flex; 
+    font-size: 10px;
+    font-weight: 300;
+    /transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 07px;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: #ffffff;
+}
+
+.arrow {
+    border: solid #94a3b8;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow {
+    transform: translateY(2px) rotate(225deg);
+    border-color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left:00%;
+    transform: translateX(-50%);
+    width: 110px;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border:0px solid #fff;
+    border-radius: 28px;
+    padding:0px;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0.90s;
+    box-shadow: 0 05px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 15px);
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 10px;
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(117, 210, 250, 0.1);
+    color: #4bc0f1;
+    padding-left:10px;
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff ;
+    padding: 5px;
+    border-radius:30px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    margin:8px;
+    font-size:10px;
+   
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) ;
+    
+}
+
+/* class style  */
+.textstyle
+{
+text-align:justify;
+font-size:10px;
+font-family:verdana;
+color: #fff ;
+width:70%;
+padding:20px;
+margin:auto;
+margin-bottom:20px;
+margin-left:-43px;
+background:#0f172a;
+margin-left: 20px;
+margin-top:20%;
+text-indent:40px;
+margin:10px;
+border-radius:10px;
+box-shadow:0px 0px 5px rgb(82, 82, 82);
+transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+}
+.textstyle:hover
+{
+ transform: translateY(-2px);
+ box-shadow:0px 0px 4px ghostwhite;
+}
+h2
+{
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+    margin:5px;
+    margin-bottom:10px;
+   font-size:15px;
+    width: 100px;
+    height:30px;
+    margin-left: 20px;
+    display: flex;
+}  
+h2:hover{
+     transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) !important;
+
+}
+
+    
+#header
+    {
+        width:200px;
+        height:200px;
+        margin:10px;
+    }
+#profile img
+    {
+        width:110px;
+        height:110px;
+        border-radius:100%;
+        box-shadow:3px 0px 4px #fff;
+        margin-top:60px;
+        margin-left: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+ {
+    .navbar {
+    width: 100%;
+    position:fixed; 
+    top:0;
+    height:50px;          
+    left:0;
+    z-index:900px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 0px solid rgb(255, 0, 0);
+    padding-top:10px;  /* UPAR SE THODE SPACE DENE KE LIYA (OPTIONL)*/
+
+}
+
+.nav-container 
+    {
+    max-width: 390px;
+    margin-left:360px;
+    padding: 20px;
+    background-color: #0f172a;
+    border-radius: 20px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    position:flex; 
+    font-size: 12px;
+    font-weight: 300;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: #ffffff;
+}
+
+.arrow {
+    border: solid #94a3b8;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow {
+    transform: translateY(2px) rotate(225deg);
+    border-color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    margin-left:35px;
+    transform: translateX(-50%);
+    width: 100px;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border:0px solid #fff;
+    border-radius: 28px;
+    padding:0px;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0.90s;
+    box-shadow: 0 05px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 15px);
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 0.7rem 1rem;
+    border-radius:90px;
+    font-size:10px;
+   
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(117, 210, 250, 0.1);
+    color: #4bc0f1;
+    padding-left:8px;
+    margin-left:px;
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff ;
+    padding: 8px;
+    border-radius:20px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    margin:10px;
+    font-size:10px;
+   
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) ;
+    
+}
+
+/* class style  */
+.textstyle
+{
+text-align:justify;
+font-size:12px;
+font-family:verdana;
+color: #fff ;
+width:70%;
+padding:20px;
+margin:auto;
+margin-bottom:20px;
+margin-left:-43px;
+background:#0f172a;
+margin-left: 20px;
+margin-top:20%;
+text-indent:40px;
+margin:10px;
+border-radius:10px;
+box-shadow:0px 0px 5px rgb(82, 82, 82);
+transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+}
+.textstyle:hover
+{
+ transform: translateY(-2px);
+ box-shadow:1px 0px 5px ghostwhite;
+}
+h2
+{
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff;
+    padding:8px;
+    border-radius:20px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+    margin:5px;
+    margin-bottom:20px;
+   font-size:17px;
+    width: 110px;
+    height:35px;
+    margin-left: 25px;
+    display: flex;
+    margin-top:10px;
+}  
+h2:hover{
+     transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) !important;
+
+}
+
+    
+#header
+    {
+        width:200px;
+        height:200px;
+        margin:10px;
+    }
+#profile img
+    {
+        width:140px;
+        height:140px;
+        border-radius:100%;
+        box-shadow:3px 0px 4px #fff;
+        margin-top:60px;
+        margin-left: 20px;
+    }
+ }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{...}
