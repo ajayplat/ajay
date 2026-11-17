@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form _in_html</title>
+    <title>form_in_html</title>
 
 </head>
 <header>Form in html</header>
 <style>
     header{
     color:black;
-    background:#ffd700;
+    background:#ffea72;
     font-size:40px;
     padding:10px;
     text-align:center;
@@ -18,84 +18,63 @@
     }
     caption
     {
-        font-size:40px;
+        font-size:2rem;
+        padding:10px;
+        text-align:center;
+        margin-left:80px;
 
     }
     input
     {
         width:100%;
         height:30px;
+        background:black;
+        color:white;
 
     }
     table
     {
-        width:70%;
-        border:1px black solid;
+        width:60%;
+        border:2px black solid;
         padding:0px;
-        box-shadow:5px 5px 5px #ffd700;
+        /box-shadow:5px 5px 5px #ffea71;
         border-radius:10px;
         margin-top:auto;
+        margin-left:6rem;
+        Font-family:Arial black;
+        background:white;
+        filter:drop-shadow(0px 0px 5px rgba(255, 251, 1, 0.877));
 
     }
 
-    nav
-{
-    background:rgb(145, 145, 145);
-    width:100px;
-    padding:1px;
-    border-radius:20px;
-    box-shadow:5px 5px 5px #ffd700;
-
-}
-nav ul li:hover
-{
-background:black;
-color:white;
-}
-nav ul li a:link
-{
-    color:rgb(255, 255, 255);
-    text-decoration:none;
-}
-nav ul li a:visited
-{
-    color:black;
-}
-nav ul li a:hover
-{
-    color:white;
-}
-nav ul li:hover a:visited
-{
-    color:white;
-    text-decoration:underline;
-}
+   
     main
     {
         margin:auto;
         width:50%;
     }
+    body
+    {
+        background:linear-gradient(33deg, #ffffff, #e3f771);
+        margin:0px;
+    }
 </style>
 <body>
     <main>
 
-        <nav>
-        <ul>
-            <li><a href="index.html">  Home </a></li>
-        </ul>
-        </nav>
         <table border="0px" cellpadding="20">
-            <caption>login form</caption>
+           
+            <caption>Login From</caption>
             <form action="http://ttplay.com/user/form.php" method="post">
                <tr>
-                <td><label for="loginid">login id</label></td>
+                <td ><label for="loginid">Login Id</label></td>
                 <td>
                     <input type="text" placeholder="Enter login id" id="loginid" title="type id here" required>
                 </td>
                </tr>
 
                <tr>
-                <td><label for="passid">password</label></td>
+                <td><label for="passid">Password</label></td>
                 <td>
                     <input type="password" required placeholder="Enter password " id="loginid" title="type password">
                 </td>

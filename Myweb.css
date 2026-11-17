@@ -616,7 +616,7 @@ h2:hover{
 
 .nav-container 
     {
-    max-width: 390px;
+    max-width: 350px;
     margin-left:360px;
     padding: 20px;
     background-color: #0f172a;
@@ -802,8 +802,410 @@ h2:hover{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
-{...}
+{
+    .navbar {
+    width: 100%;
+    position:fixed; 
+    top:0;
+    height:50px;          
+    left:0;
+    z-index:900px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 0px solid rgb(255, 0, 0);
+    padding-top:10px;  /* UPAR SE THODE SPACE DENE KE LIYA (OPTIONL)*/
+
+}
+
+.nav-container 
+    {
+    max-width:600px;
+    margin-left:600px;
+    padding: 20px;
+    background-color: #0f172a;
+    border-radius: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:11px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    position:flex; 
+    font-size: 15px;
+    font-weight: 300;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: #ffffff;
+}
+
+.arrow {
+    border: solid #94a3b8;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding:2px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow {
+    transform: translateY(2px) rotate(225deg);
+    border-color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    margin-left:35px;
+    transform: translateX(-50%);
+    width:125px;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border:0px solid #fff;
+    border-radius:30px;
+    padding:0px;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0.90s;
+    box-shadow: 0 05px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 15px);
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 0.7rem 1rem;
+    border-radius:90px;
+    font-size:13px;
+   
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(117, 210, 250, 0.1);
+    color: #4bc0f1;
+    padding-left:8px;
+  
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff ;
+    padding:6px;
+    border-radius:20px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    margin:10px;
+    font-size:15px;
+   
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) ;
+    
+}
+
+/* class style  */
+.textstyle
+{
+text-align:justify;
+/display:flex;
+font-size:15px;
+font-family:verdana;
+color: #fff ;
+width:80%;
+padding:25px;
+margin:auto;
+margin-bottom:20px;
+margin-left:-43px;
+background:#0f172a;
+margin-left: 20px;
+margin-top:20%;
+text-indent:40px;
+margin:20px;
+border-radius:10px;
+box-shadow:0px 0px 5px rgb(82, 82, 82);
+transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+}
+.textstyle:hover
+{
+ transform: translateY(-2px);
+ box-shadow:1px 0px 5px ghostwhite;
+}
+h2
+{
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff;
+    padding:10px;
+    border-radius:20px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+    margin:5px;
+    margin-bottom:20px;
+   font-size:20px;
+    width: 150px;
+    height:40px;
+    margin-left:3rem;
+    display: flex;
+    margin-top:10px;
+}  
+h2:hover{
+     transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) !important;
+
+}
+
+    
+#header
+    {
+        width:200px;
+        height:200px;
+        margin:10px;
+    }
+#profile img
+    {
+        width:200px;
+        height:200px;
+        border-radius:100%;
+        box-shadow:3px 0px 4px #fff;
+        margin-top:60px;
+        margin-left:40px;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) 
-{...}
+{
+      .navbar {
+    width: 100%;
+    position:fixed; 
+    top:0;
+    height:60px;          
+    left:0;
+    z-index:1000px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 0px solid rgb(255, 0, 0);
+    padding-top:10px;  /* UPAR SE THODE SPACE DENE KE LIYA (OPTIONL)*/
+
+}
+
+.nav-container 
+    {
+    max-width:550px;
+    margin-left:800px;
+    padding:30px;
+    background-color: #0f172a;
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap:40px;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    position:flex; 
+    font-size: 18px;
+    font-weight: 300;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.nav-links a:hover,
+.nav-links li.active a {
+    color: #ffffff;
+}
+
+.arrow {
+    border: solid #94a3b8;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding:2px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow {
+    transform: translateY(2px) rotate(225deg);
+    border-color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    margin-left:35px;
+    transform: translateX(-50%);
+    width:135px;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border:0px solid #fff;
+    border-radius:30px;
+    padding:0px;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0.90s;
+    box-shadow: 0 05px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 15px);
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 0.7rem 1rem;
+    border-radius:90px;
+    font-size:15px;
+   
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(117, 210, 250, 0.1);
+    color: #4bc0f1;
+    padding-left:15px;
+  
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff ;
+    padding:8px;
+    border-radius:40px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    margin:10px;
+    font-size:17px;
+    gap: left="10px";
+   
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) ;
+    
+}
+
+/* class style  */
+.textstyle
+{
+text-align:justify;
+/display:flex;
+font-size:15px;
+font-family:verdana;
+color: #fff ;
+width:80%;
+padding:25px;
+margin:auto;
+margin-bottom:20px;
+margin-left:-43px;
+background:#0f172a;
+margin-left: 20px;
+margin-top:20%;
+text-indent:40px;
+margin:20px;
+border-radius:10px;
+box-shadow:0px 0px 5px rgb(82, 82, 82);
+transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+}
+.textstyle:hover
+{
+ transform: translateY(-2px);
+ box-shadow:1px 0px 5px ghostwhite;
+}
+h2
+{
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: #fff;
+    padding:10px;
+    border-radius:50px;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.18);
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s ;
+    margin:0px;
+    margin-bottom:20px;
+   font-size:25px;
+    width: 160px;
+    height:50px;
+    margin-left:3rem;
+    display: flex;
+    margin-top:10px;
+}  
+h2:hover{
+     transform: translateY(-2px);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 25px rgba(56, 189, 248, 0.25) !important;
+
+}
+
+    
+#header
+    {
+        width:200px;
+        height:200px;
+        margin:10px;
+    }
+#profile img
+    {
+        width:200px;
+        height:200px;
+        border-radius:100%;
+        box-shadow:3px 0px 4px #fff;
+        margin-top:60px;
+        margin-left:40px;
+    }
+
+}
