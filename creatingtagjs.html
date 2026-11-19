@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    CREATING TAG
+</header>
+<style>
+    .myimg
+    {
+        border-radius: 20%;
+        margin:40px;
+        cursor:pointer;
+        transition: 0.50s;
+    }
+    header
+
+    {
+        text-align:center;
+        background-color:white;
+        color:black;
+        width:50%;
+        padding:10px;
+        font-size: 20px;
+        font-family:arial black;
+        justify-content: center;
+        margin-left: 30%;
+        display: flex;
+        border-radius: 50%;
+
+    }
+</style>
+<body>
+    <script>
+        // creating tage (Element) using js
+        var p = document.createElement("img")
+        document.body.appendChild(p)
+
+        p.src = "imgas/v2.jpg"
+        p.style.width = "200px"
+        p.style="height:200px"
+        p.style.boxShadow = "0px 0px 10px gray"
+        p.className="myimg"
+
+        // Event  handling 
+
+        p.onclick=function()
+        {
+            p.src="imgas/p1.jpg"
+            
+
+        }
+        p.onmouseout=function()
+        {
+            p.src="imgas/v2.jpg"
+            this.style.transform="scale(1.0)"
+            this.style.borderRadius="20%"
+            document.bgColor="white"
+
+        }
+        p.onmouseover=function()
+        {
+            this.style.transform="scale(1.50)"
+            this.style.borderRadius="100%"
+            document.bgColor="black"
+            this.style.margin="100px"
+        }
+
+    
+
+
+
+        document.title = "creatingtag js"
+
+</script>
+    
+</body>
+</html>
