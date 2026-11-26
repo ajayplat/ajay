@@ -11,36 +11,87 @@
         color:white;
         font-size: 3rem;
       padding:8px;
-       
+       font-family: arial;
         background-color: blue;
        
         box-shadow:0px 0px 10px gray;
-      
+    }
+
+    .c1
+    {
+      color:white;
+      background-color: blue;
+      padding:9px;
+      font-family: arial;
+      font-size: 20px;
+      text-align: center;
+      border: 0px;
+      transform: 0.50s;
+      border-radius: 20pc;
+      margin-left: 10px;
 
     }
+
+    .c1:hover{
+      color:blue;
+      background-color: white;
+      font-family: arial black;
+      transition: scale(0.80);
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    .c2
+    {
+      color:white;
+      background-color: blue;
+      padding:9px;
+      font-family: arial;
+      font-size: 20px;
+      text-align: center;
+      border: 0px;
+      transform: 0.50s;
+      border-radius: 20pc;
+      margin-left: 20px;
+
+    }
+
+    .c2:hover{
+      color:blue;
+      background-color: white;
+      font-family: arial black;
+      transition: scale(0.80);
+      box-shadow: 0px 0px 10px gray;
+      
+    }
+    body
+    {
+      background-color: rgb(255, 254, 218);
+    }
+
+     
 </style>
 <body>
 
     <h1>Date Class in js</h1>
 
     <div id="c1">Time</div>
+   </br>
+    <button onclick="startclock()" class="c1">Start Clock</button>
+    <button onclick="stopclock()" class="c2">Stop Clock</button>
 
     <script>
       
       /* Date is a Class  in javascript ie.  its Data Date type */
       /* Creating Instance of Date Class */
 
-      var d = new Date()
-
-      //alert(d)
-      //alert(d.getTime())
-      //alert(d.toLocaleTimestring())
-      //alert(d.toLocalestring())
-
+      var d 
       var c = document.getElementById("c1")
 
-
-      c.innerHTML= d.toLocaleTimeString()
+      function show()
+      
+      {
+        d = new Date()
+        c.innerHTML= d.toLocaleTimeString()
       c.style.color="blue"
       c.style.fontSize="90px"
       c.style.fontFamily="arial"
@@ -48,10 +99,33 @@
       c.style.boxShadow="0px 0px 10px"
       c.style.borderRadius="3rem"
       c.style.textAlign="center"
-      c.style.margin="20rem"
+      c.style.margin="60px"
 
+      }
+
+      //alert(d)
+      //alert(d.getTime())
+      //alert(d.toLocaleTimestring())
+      //alert(d.toLocalestring())
       
 
+      // UDF :- user defind function
+
+      var t
+
+      function startclock()
+
+      {
+         t = setInterval("show()",1000)
+      }
+
+      function stopclock()
+
+      {
+        clearInterval(t)
+      }
+
+      document.title="Date function"
     </script>
 </body>
 </html>
